@@ -29,18 +29,21 @@ public class LineComparison {
 		System.out.println("Length of the line2 is: " + length2);
 	}
 
-	private static void checkingEqualsLine() {
-		int a = (int) length1;
-		int b = (int) length2;
-		if (a == b) {
-			System.out.println("Lines are equal");
-		} else {
-			System.out.println("Lines are not equal");
-		}
+	private static void comparingLine() {
+
+        if (length1 > length2)
+            System.out.println("length of 1st end points are Greater Than length of 2st end points are ");
+
+        else if (length1 < length2)
+            System.out.println("length of 1st end points are Less Than length of 2st end points are ");
+
+        else
+            System.out.println("Both Line Are  Equal");
+
 	}
 
 	public static void main(String[] args) {
 		LineComparision();
-		checkingEqualsLine();
+		comparingLine();
 	}
 }
